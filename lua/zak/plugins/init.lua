@@ -123,4 +123,8 @@ return {
     'dense-analysis/ale'
   },
 
+  {
+    'mbbill/undotree'
+  },
+
 }
