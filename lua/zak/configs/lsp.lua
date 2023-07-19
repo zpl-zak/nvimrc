@@ -73,7 +73,7 @@ local configs = require('lspconfig.configs')
 
 configs.jails = {
   default_config = {
-    cmd = {'jails'},
+    cmd = {'jails.exe'},
     filetypes = {'jai'},
     root_dir = function(fname)
       return lsp.util.find_git_ancestor(fname)
