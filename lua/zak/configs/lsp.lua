@@ -42,7 +42,6 @@ local servers = {
       telemetry = { enable = false },
     },
   },
-  ocamllsp = {}
 }
 
 -- Setup neovim lua configuration
