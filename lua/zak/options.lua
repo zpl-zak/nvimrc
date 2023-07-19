@@ -50,7 +50,7 @@ vim.o.termguicolors = true
 vim.o.scrolloff = 8
 vim.o.signcolumn = "yes"
 vim.opt.isfname:append("@-@")
-vim.o.colorcolumn = "80"
+vim.o.colorcolumn = "120"
 
 -- indent setup
 vim.o.list = false

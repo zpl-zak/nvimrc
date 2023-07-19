@@ -70,6 +70,30 @@ mason_lspconfig.setup_handlers {
 }
 
 local lsp = require('lspconfig')
+local configs = require('lspconfig.configs')
+
+configs.jails = {
+  default_config = {
+    cmd = {'jails'},
+    filetypes = {'jai'},
+    root_dir = function(fname)
+      return lsp.util.find_git_ancestor(fname)
+    end,
+    name = 'jails',
+    settinsgs = {}
+  }
+}
+
+lsp.jails.setup {
+  capabilities = capabilities,
+  on_attach = on_attach
+}
+
+local sign_cfg = {
+
+}
+
+require('lsp_signature').setup(sign_cfg);
 
 -- Diagnostic symbols in the sign column (gutter)
 local signs = {

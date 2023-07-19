@@ -127,4 +127,10 @@ return {
     'mbbill/undotree'
   },
 
+  {
+    'rust-lang/rust.vim'
+  },
+
+  { 'ray-x/lsp_signature.nvim' },
+
 }
